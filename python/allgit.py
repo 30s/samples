@@ -9,6 +9,7 @@ class AllGit(object):
     def __init__(self, app_id, app_key):
         self.app_id = app_id
         self.app_key = app_key
+        self.object_id = None
         self.headers = {
             'X-Parse-Application-Id': app_id,
             'X-Parse-REST-API-Key': app_key,
@@ -24,7 +25,7 @@ class AllGit(object):
                              data=json.dumps(data),
                              headers=self.headers)
         resp = resp.json()
-        if hasattr(resp, 'objectId'):
+        if resp.has_key('objectId'):
             self.username = username
             self.object_id = resp['objectId']
             self.sessionToken = resp['sessionToken']
@@ -40,13 +41,68 @@ class AllGit(object):
                             params=params,
                             headers=self.headers)
         resp = resp.json()
-        if hasattr(resp, 'objectId'):
+        if resp.has_key('objectId'):
             self.username = username
             self.object_id = resp['objectId']
             self.sessionToken = resp['sessionToken']
 
         return resp
-        
+
+
+    def addrepo(self, url, remark):
+        if self.object_id is None:
+            print 'please login first!'
+            return
+
+        data = {
+            'url': url,
+            'remark': remark}
+        resp = requests.post(AllGit.URL + '/1/classes/Repo', 
+                             data=json.dumps(data),
+                             headers=self.headers)
+        resp = resp.json()
+        if resp.has_key('objectId'):
+            objectId = resp['objectId']
+            data = {
+                'owner': {
+                    '__op': 'AddRelation',
+                    "objects": [{
+                            "__type": "Pointer",
+                            "className": "User",
+                            "objectId": self.object_id
+                            }]
+                    }}
+            resp = requests.put(AllGit.URL + '/1/classes/Repo/' + objectId,
+                                data=json.dumps(data),
+                                headers=self.headers)
+            resp = resp.json()
+        return resp
+
+
+    def delrepo(self, objectId):
+        resp = requests.delete(AllGit.URL + '/1/classes/Repo/' + objectId,
+                               headers=self.headers)
+        return resp.json()
+
+
+    def allrepos(self):
+        if self.object_id is None:
+            print 'please login first!'
+            return
+
+        params = {
+            'where': json.dumps({
+                    'owner': {
+                        "__type": "Pointer",
+                        "className": "User",
+                        "objectId": self.object_id
+                        }
+                    })
+            }
+        resp = requests.get(AllGit.URL + '/1/classes/Repo',
+                            params=params,
+                            headers=self.headers)
+        return resp.json()
 
 
 if __name__=='__main__':
