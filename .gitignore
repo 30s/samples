@@ -1,1 +1,3 @@
 *.beam
+python/settings.py
+*.pyc
