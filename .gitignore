@@ -3,3 +3,5 @@ python/settings.py
 *.pyc
 
 maventut/target/
+maventut/.classpath
+maventut/.project
