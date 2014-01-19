@@ -24,6 +24,9 @@
   </dependencies>
 
   <build>
+    <filters>
+      <filter>src/main/filters/filter.properties</filter>
+    </filters>    
     <resources>
       <resource>
         <directory>src/main/resources</directory>
