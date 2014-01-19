@@ -1,3 +1,5 @@
 *.beam
 python/settings.py
 *.pyc
+
+maventut/target/
