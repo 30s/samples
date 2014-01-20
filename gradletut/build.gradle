@@ -21,3 +21,9 @@ task count << {
 task intro(dependsOn: hello) << {
     println "I'm Gradle"
 }
+
+4.times { counter ->
+    task "task$counter" << {
+        println "I'm task number $counter"
+    }
+}
