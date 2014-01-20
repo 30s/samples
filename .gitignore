@@ -2,6 +2,7 @@
 python/settings.py
 *.pyc
 
+ant_tut/build/
 maventut/target/
 maventut/.classpath
 maventut/.project
