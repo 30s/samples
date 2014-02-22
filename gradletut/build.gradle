@@ -1,0 +1,30 @@
+task hello {
+    doLast {
+        println 'Hello world!'
+    }
+}
+
+task hello1 << {
+    println 'Hello world! simple version'
+}
+
+task upper << {
+    String someString = 'mY_nAmE'
+    println "Original: " + someString 
+    println "Upper case: " + someString.toUpperCase()
+}
+
+task count << {
+    4.times { print "$it " }
+}
+
+task intro(dependsOn: hello) << {
+    println "I'm Gradle"
+}
+
+4.times { counter ->
+    task "task$counter" << {
+        println "I'm task number $counter"
+    }
+}
+task0.dependsOn task2, task3
