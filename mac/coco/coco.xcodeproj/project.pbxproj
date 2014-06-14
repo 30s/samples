@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4E2713D1934C038002ED77E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E2713C1934C038002ED77E /* Cocoa.framework */; };
+		E4E271471934C038002ED77E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4E271451934C038002ED77E /* InfoPlist.strings */; };
+		E4E271491934C038002ED77E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E271481934C038002ED77E /* main.m */; };
+		E4E2714D1934C038002ED77E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E4E2714B1934C038002ED77E /* Credits.rtf */; };
+		E4E271501934C038002ED77E /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2714F1934C038002ED77E /* MCAppDelegate.m */; };
+		E4E271531934C038002ED77E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4E271511934C038002ED77E /* MainMenu.xib */; };
+		E4E271551934C038002ED77E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E271541934C038002ED77E /* Images.xcassets */; };
+		E4E2715C1934C038002ED77E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E2715B1934C038002ED77E /* XCTest.framework */; };
+		E4E2715D1934C038002ED77E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E2713C1934C038002ED77E /* Cocoa.framework */; };
+		E4E271651934C038002ED77E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4E271631934C038002ED77E /* InfoPlist.strings */; };
+		E4E271671934C038002ED77E /* cocoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E271661934C038002ED77E /* cocoTests.m */; };
+		E4E271711934C383002ED77E /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E271701934C383002ED77E /* IOBluetooth.framework */; };
+		E4E2717C19359D89002ED77E /* BLEConnectorA3.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2717419359D89002ED77E /* BLEConnectorA3.m */; };
+		E4E2717D19359D89002ED77E /* LFHardwareConnectorA3.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2717719359D89002ED77E /* LFHardwareConnectorA3.m */; };
+		E4E2717E19359D89002ED77E /* LFPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2717919359D89002ED77E /* LFPeripheral.m */; };
+		E4E2717F19359D89002ED77E /* LFSensorDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2717B19359D89002ED77E /* LFSensorDefine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4E2715E1934C038002ED77E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4E271311934C038002ED77E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4E271381934C038002ED77E;
+			remoteInfo = coco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4E271391934C038002ED77E /* coco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E2713C1934C038002ED77E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E4E2713F1934C038002ED77E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E4E271401934C038002ED77E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E4E271411934C038002ED77E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E4E271441934C038002ED77E /* coco-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "coco-Info.plist"; sourceTree = "<group>"; };
+		E4E271461934C038002ED77E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4E271481934C038002ED77E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4E2714A1934C038002ED77E /* coco-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "coco-Prefix.pch"; sourceTree = "<group>"; };
+		E4E2714C1934C038002ED77E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E4E2714E1934C038002ED77E /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
+		E4E2714F1934C038002ED77E /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		E4E271521934C038002ED77E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E4E271541934C038002ED77E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E4E2715A1934C038002ED77E /* cocoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cocoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E2715B1934C038002ED77E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E4E271621934C038002ED77E /* cocoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cocoTests-Info.plist"; sourceTree = "<group>"; };
+		E4E271641934C038002ED77E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4E271661934C038002ED77E /* cocoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoTests.m; sourceTree = "<group>"; };
+		E4E271701934C383002ED77E /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		E4E2717319359D89002ED77E /* BLEConnectorA3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEConnectorA3.h; sourceTree = "<group>"; };
+		E4E2717419359D89002ED77E /* BLEConnectorA3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEConnectorA3.m; sourceTree = "<group>"; };
+		E4E2717519359D89002ED77E /* HealthAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthAttribute.h; sourceTree = "<group>"; };
+		E4E2717619359D89002ED77E /* LFHardwareConnectorA3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFHardwareConnectorA3.h; sourceTree = "<group>"; };
+		E4E2717719359D89002ED77E /* LFHardwareConnectorA3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFHardwareConnectorA3.m; sourceTree = "<group>"; };
+		E4E2717819359D89002ED77E /* LFPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFPeripheral.h; sourceTree = "<group>"; };
+		E4E2717919359D89002ED77E /* LFPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFPeripheral.m; sourceTree = "<group>"; };
+		E4E2717A19359D89002ED77E /* LFSensorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSensorDefine.h; sourceTree = "<group>"; };
+		E4E2717B19359D89002ED77E /* LFSensorDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSensorDefine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4E271361934C038002ED77E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E271711934C383002ED77E /* IOBluetooth.framework in Frameworks */,
+				E4E2713D1934C038002ED77E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4E271571934C038002ED77E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E2715D1934C038002ED77E /* Cocoa.framework in Frameworks */,
+				E4E2715C1934C038002ED77E /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4E271301934C038002ED77E = {
+			isa = PBXGroup;
+			children = (
+				E4E271421934C038002ED77E /* coco */,
+				E4E271601934C038002ED77E /* cocoTests */,
+				E4E2713B1934C038002ED77E /* Frameworks */,
+				E4E2713A1934C038002ED77E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4E2713A1934C038002ED77E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4E271391934C038002ED77E /* coco.app */,
+				E4E2715A1934C038002ED77E /* cocoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4E2713B1934C038002ED77E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4E271701934C383002ED77E /* IOBluetooth.framework */,
+				E4E2713C1934C038002ED77E /* Cocoa.framework */,
+				E4E2715B1934C038002ED77E /* XCTest.framework */,
+				E4E2713E1934C038002ED77E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4E2713E1934C038002ED77E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4E2713F1934C038002ED77E /* AppKit.framework */,
+				E4E271401934C038002ED77E /* CoreData.framework */,
+				E4E271411934C038002ED77E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E4E271421934C038002ED77E /* coco */ = {
+			isa = PBXGroup;
+			children = (
+				E4E2714E1934C038002ED77E /* MCAppDelegate.h */,
+				E4E2714F1934C038002ED77E /* MCAppDelegate.m */,
+				E4E271511934C038002ED77E /* MainMenu.xib */,
+				E4E271541934C038002ED77E /* Images.xcassets */,
+				E4E271431934C038002ED77E /* Supporting Files */,
+			);
+			path = coco;
+			sourceTree = "<group>";
+		};
+		E4E271431934C038002ED77E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4E2717219359D89002ED77E /* BluetoothA3 */,
+				E4E271441934C038002ED77E /* coco-Info.plist */,
+				E4E271451934C038002ED77E /* InfoPlist.strings */,
+				E4E271481934C038002ED77E /* main.m */,
+				E4E2714A1934C038002ED77E /* coco-Prefix.pch */,
+				E4E2714B1934C038002ED77E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4E271601934C038002ED77E /* cocoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4E271661934C038002ED77E /* cocoTests.m */,
+				E4E271611934C038002ED77E /* Supporting Files */,
+			);
+			path = cocoTests;
+			sourceTree = "<group>";
+		};
+		E4E271611934C038002ED77E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4E271621934C038002ED77E /* cocoTests-Info.plist */,
+				E4E271631934C038002ED77E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4E2717219359D89002ED77E /* BluetoothA3 */ = {
+			isa = PBXGroup;
+			children = (
+				E4E2717319359D89002ED77E /* BLEConnectorA3.h */,
+				E4E2717419359D89002ED77E /* BLEConnectorA3.m */,
+				E4E2717519359D89002ED77E /* HealthAttribute.h */,
+				E4E2717619359D89002ED77E /* LFHardwareConnectorA3.h */,
+				E4E2717719359D89002ED77E /* LFHardwareConnectorA3.m */,
+				E4E2717819359D89002ED77E /* LFPeripheral.h */,
+				E4E2717919359D89002ED77E /* LFPeripheral.m */,
+				E4E2717A19359D89002ED77E /* LFSensorDefine.h */,
+				E4E2717B19359D89002ED77E /* LFSensorDefine.m */,
+			);
+			name = BluetoothA3;
+			path = ../../../../lifesense_a3_ios/Lifesense/Classes/BluetoothA3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4E271381934C038002ED77E /* coco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4E2716A1934C038002ED77E /* Build configuration list for PBXNativeTarget "coco" */;
+			buildPhases = (
+				E4E271351934C038002ED77E /* Sources */,
+				E4E271361934C038002ED77E /* Frameworks */,
+				E4E271371934C038002ED77E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coco;
+			productName = coco;
+			productReference = E4E271391934C038002ED77E /* coco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4E271591934C038002ED77E /* cocoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4E2716D1934C038002ED77E /* Build configuration list for PBXNativeTarget "cocoTests" */;
+			buildPhases = (
+				E4E271561934C038002ED77E /* Sources */,
+				E4E271571934C038002ED77E /* Frameworks */,
+				E4E271581934C038002ED77E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4E2715F1934C038002ED77E /* PBXTargetDependency */,
+			);
+			name = cocoTests;
+			productName = cocoTests;
+			productReference = E4E2715A1934C038002ED77E /* cocoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4E271311934C038002ED77E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = mycabinet;
+				TargetAttributes = {
+					E4E271591934C038002ED77E = {
+						TestTargetID = E4E271381934C038002ED77E;
+					};
+				};
+			};
+			buildConfigurationList = E4E271341934C038002ED77E /* Build configuration list for PBXProject "coco" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4E271301934C038002ED77E;
+			productRefGroup = E4E2713A1934C038002ED77E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4E271381934C038002ED77E /* coco */,
+				E4E271591934C038002ED77E /* cocoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4E271371934C038002ED77E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E271471934C038002ED77E /* InfoPlist.strings in Resources */,
+				E4E271551934C038002ED77E /* Images.xcassets in Resources */,
+				E4E2714D1934C038002ED77E /* Credits.rtf in Resources */,
+				E4E271531934C038002ED77E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4E271581934C038002ED77E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E271651934C038002ED77E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4E271351934C038002ED77E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E271501934C038002ED77E /* MCAppDelegate.m in Sources */,
+				E4E2717D19359D89002ED77E /* LFHardwareConnectorA3.m in Sources */,
+				E4E271491934C038002ED77E /* main.m in Sources */,
+				E4E2717C19359D89002ED77E /* BLEConnectorA3.m in Sources */,
+				E4E2717F19359D89002ED77E /* LFSensorDefine.m in Sources */,
+				E4E2717E19359D89002ED77E /* LFPeripheral.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4E271561934C038002ED77E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E271671934C038002ED77E /* cocoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4E2715F1934C038002ED77E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4E271381934C038002ED77E /* coco */;
+			targetProxy = E4E2715E1934C038002ED77E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4E271451934C038002ED77E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4E271461934C038002ED77E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E4E2714B1934C038002ED77E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4E2714C1934C038002ED77E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E4E271511934C038002ED77E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4E271521934C038002ED77E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E4E271631934C038002ED77E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4E271641934C038002ED77E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4E271681934C038002ED77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4E271691934C038002ED77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4E2716B1934C038002ED77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coco/coco-Prefix.pch";
+				INFOPLIST_FILE = "coco/coco-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4E2716C1934C038002ED77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coco/coco-Prefix.pch";
+				INFOPLIST_FILE = "coco/coco-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E4E2716E1934C038002ED77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/coco.app/Contents/MacOS/coco";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coco/coco-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "cocoTests/cocoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E4E2716F1934C038002ED77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/coco.app/Contents/MacOS/coco";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coco/coco-Prefix.pch";
+				INFOPLIST_FILE = "cocoTests/cocoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4E271341934C038002ED77E /* Build configuration list for PBXProject "coco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4E271681934C038002ED77E /* Debug */,
+				E4E271691934C038002ED77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4E2716A1934C038002ED77E /* Build configuration list for PBXNativeTarget "coco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4E2716B1934C038002ED77E /* Debug */,
+				E4E2716C1934C038002ED77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4E2716D1934C038002ED77E /* Build configuration list for PBXNativeTarget "cocoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4E2716E1934C038002ED77E /* Debug */,
+				E4E2716F1934C038002ED77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4E271311934C038002ED77E /* Project object */;
+}
