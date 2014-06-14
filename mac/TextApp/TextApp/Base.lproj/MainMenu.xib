@@ -709,5 +709,6 @@
             </view>
         </window>
         <customObject id="V0N-JW-x3l" customClass="NotifyingClass"/>
+        <customObject id="uyW-fr-k9G" customClass="NotifyingClass"/>
     </objects>
 </document>
