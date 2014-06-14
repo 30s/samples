@@ -10,4 +10,10 @@
 
 @implementation NotifyingClass
 
+- (id)init {
+    NSLog(@"Hello World!");
+    
+    return self;
+}
+
 @end
