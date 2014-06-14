@@ -18,6 +18,7 @@
 		E4DEF16D194C50CB00263E9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DEF14C194C50CB00263E9C /* Cocoa.framework */; };
 		E4DEF175194C50CB00263E9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4DEF173194C50CB00263E9C /* InfoPlist.strings */; };
 		E4DEF177194C50CB00263E9C /* TextAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DEF176194C50CB00263E9C /* TextAppTests.m */; };
+		E4DEF182194C5B2100263E9C /* NotifyingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DEF181194C5B2100263E9C /* NotifyingClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		E4DEF172194C50CB00263E9C /* TextAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextAppTests-Info.plist"; sourceTree = "<group>"; };
 		E4DEF174194C50CB00263E9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4DEF176194C50CB00263E9C /* TextAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextAppTests.m; sourceTree = "<group>"; };
+		E4DEF180194C5B2100263E9C /* NotifyingClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyingClass.h; sourceTree = "<group>"; };
+		E4DEF181194C5B2100263E9C /* NotifyingClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyingClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				E4DEF161194C50CB00263E9C /* MainMenu.xib */,
 				E4DEF164194C50CB00263E9C /* Images.xcassets */,
 				E4DEF153194C50CB00263E9C /* Supporting Files */,
+				E4DEF180194C5B2100263E9C /* NotifyingClass.h */,
+				E4DEF181194C5B2100263E9C /* NotifyingClass.m */,
 			);
 			path = TextApp;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			files = (
 				E4DEF160194C50CB00263E9C /* MCAppDelegate.m in Sources */,
 				E4DEF159194C50CB00263E9C /* main.m in Sources */,
+				E4DEF182194C5B2100263E9C /* NotifyingClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

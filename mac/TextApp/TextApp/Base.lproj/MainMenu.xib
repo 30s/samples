@@ -708,5 +708,6 @@
                 </subviews>
             </view>
         </window>
+        <customObject id="V0N-JW-x3l" customClass="NotifyingClass"/>
     </objects>
 </document>
