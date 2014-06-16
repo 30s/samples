@@ -11,7 +11,7 @@
 @implementation NotifyingClass
 
 - (IBAction)displaySomeText:(id)sender {
-    NSLog(@"displaySomeText");
+    [textView insertText:@"displaySomeText"];
 }
 
 @end

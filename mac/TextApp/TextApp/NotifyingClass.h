@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NotifyingClass : NSObject {
-
+    IBOutlet NSTextView *textView;
 }
 
 - (IBAction)displaySomeText:(id)sender;

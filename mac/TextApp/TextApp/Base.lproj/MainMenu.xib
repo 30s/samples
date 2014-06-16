@@ -719,6 +719,10 @@
                 </subviews>
             </view>
         </window>
-        <customObject id="V0N-JW-x3l" customClass="NotifyingClass"/>
+        <customObject id="V0N-JW-x3l" customClass="NotifyingClass">
+            <connections>
+                <outlet property="textView" destination="uDy-qL-r77" id="klx-r3-GUW"/>
+            </connections>
+        </customObject>
     </objects>
 </document>
