@@ -12,6 +12,6 @@
 
 }
 
-- (void)displaySomeText;
+- (IBAction)displaySomeText:(id)sender;
 
 @end

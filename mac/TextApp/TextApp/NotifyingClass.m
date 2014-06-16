@@ -10,7 +10,7 @@
 
 @implementation NotifyingClass
 
-- (void)displaySomeText {
+- (IBAction)displaySomeText:(id)sender {
     NSLog(@"displaySomeText");
 }
 
