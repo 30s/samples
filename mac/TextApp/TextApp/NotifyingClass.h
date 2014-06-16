@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NotifyingClass : NSObject
+@interface NotifyingClass : NSObject {
+
+}
+
+- (void)displaySomeText;
 
 @end
